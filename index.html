@@ -1,16 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
 
-
-<HTML>
-<HEAD>
-	
-</HEAD>
+<head>
+    <meta charset="UTF-8">
+    <title>ScrollSpy.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="highlight-js/highlightjs.css">
+    <link rel="stylesheet" href="ScrollSpy.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-	
-<iframe width="100%" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiOWYyZGQ2MDEtYmRjOC00YzYxLTkwMTItMWFjNzhiMGVlMDhhIiwidCI6ImQ0YmQ2ODU3LTkwMGQtNGM2MS1iYTk5LWNkMmQ5MTJlMmI4YyJ9&pageName=ReportSectionb85939c7935c3b6264b1" frameborder="0" allowFullScreen="true"></iframe>
+
+    <script src="ScrollSpy.min.js"></script>
+    <script src="highlight-js/highlight.pack.js"></script>
+
+    <div class="container">
+        <h1>Lucas Castro</h1>
+        <h2>Data Analyst</h2>
+    </div>
+
+    <div class="content">
+
+        <section class="scrollspy" spy-title="About me">
+            <h2>About me</h2>
+            <h3>Hi! I'm Lucas E. Castro</h3>
+            <p>I'm a Programming Teacher and Business Intelligence Analist.</p>
+
+            <h3>Experience</h3>
+
+            <ul>
+                <li>
+                    <p>Data Analytics Consultor - Since March 2020</p>
+                </li>
+                <li>
+                    <p> Programming Professor - Since August 2015</p>
+                </li>
+            </ul>
+
+            <h3>Data Analytics Skills</h3>
+            <ul>
+                <li>
+                    <p>SQL</p>
+                </li>
+                <li>
+                    <p> MySQL</p>
+                </li>
+                <li>
+                    <p>Qlikview (including Qlik Console an NPrinting)</p>
+                </li>
+                <li>
+                    <p>R</p>
+                </li>
+                <li>
+                    <p>Python</p>
+                </li>
+                <li>
+                    <p>Learning Power Bi and Power Automate!</p>
+                </li>
+            </ul>
+            <h3>Studies</h3>
+            <ul>
+                <li>
+                    <p>Certificate of Advanced in Business Inteligence - On Course / Diplomatura en Business
+                        Intelligence - En curso</p>
+                </li>
+                <li>
+                    <p> Professor of Industry Disciplines / Profesor en Disciplinas Industriales </p>
+                </li>
+                <li>
+                    <p>Technical Studies in Applied Computing / Tecnicatura en Informática Aplicada </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="scrollspy" spy-title="Vaccination Dashboard">
+            <h2>Vaccination Dashboard</h2>
+
+            <h3>Covid19 Vaccination in Buenos Aires </h3>
+
+
+
+            <pre><code class="hljs html"><b></b>
+<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiOWYyZGQ2MDEtYmRjOC00YzYxLTkwMTItMWFjNzhiMGVlMDhhIiwidCI6ImQ0YmQ2ODU3LTkwMGQtNGM2MS1iYTk5LWNkMmQ5MTJlMmI4YyJ9&pageName=ReportSectionb85939c7935c3b6264b1" frameborder="0" allowFullScreen="true"></iframe>
+</pre>
+
+        </section>
+
+        <section class="scrollspy" spy-title="SUBE Card Transacctions">
+            <h2>SUBE Card Transacctions</h2>
+
+            <H3>SUBE Card Transacctions in Argentina 2020/2021</H3>
+
+            <pre><code class="hljs javascript"><iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiOWUzNGI4YzktYjdlZC00NzJiLWI2OGQtMjE2YjA3ZjIzMjU2IiwidCI6ImQ0YmQ2ODU3LTkwMGQtNGM2MS1iYTk5LWNkMmQ5MTJlMmI4YyJ9" frameborder="0" allowFullScreen="true"></iframe></code></pre>
+
+
+
+
+        </section>
+
+        <section class="scrollspy" spy-title="Indicator Options">
+            <h2>Contact</h2>
+            <p>In my repositories you'll find some introductory code about Python and R. <a
+                    href=https://github.com/lcastro92>Link</a></a></p>
+            <p>Here is my Linkedin: <a href=https://www.linkedin.com/in/lucas-ezequiel-castro-709723187 />Link</a></p>
+
+        </section>
+
+
+
+
+    </div>
+
+    <div id="indicator"></div>
+
+
+
+    <script>
+        var indicator = document.getElementById('indicator');
+
+        var spy = new ScrollSpy(
+            {
+                contexts_class: 'scrollspy'
+            }
+        );
+
+        spy.Indicator({
+            element: indicator
+        });
+
+        indicator.style.top = 'calc(50vh - ' + (indicator.offsetHeight / 2) + 'px)';
+    </script>
+
+
+
 
 
 </body>
 
-
-</HTML>
+</html>
