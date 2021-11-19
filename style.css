@@ -38,7 +38,7 @@ body {
 	-webkit-animation: gradientBG 15s ease infinite;
 	animation: gradientBG 15s ease infinite;
 	text-align: center;
-	color: black;
+	color: white;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
