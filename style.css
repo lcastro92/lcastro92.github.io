@@ -72,11 +72,11 @@ body {
 	width: calc(100% - 16px);
 	font-size: 15px;
 	padding: 12px 8px;
-	border-left-color: #D81B60;
+	border-left-color: #111212;
 }
 
 #indicator ul li.spy-active {
-	color: #D81B60;
+	color: #111212;
 }
 
 section.scrollspy {
@@ -109,7 +109,7 @@ section.scrollspy h3 {
 	padding: 6px;
 	margin: 12px 0;
 	color: #454545;
-	border-left: 3px solid #D81B60;
+	border-left: 3px solid #111212;
 }
 
 .hljs {
