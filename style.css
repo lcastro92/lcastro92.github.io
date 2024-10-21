@@ -81,7 +81,7 @@ body {
 
 section.scrollspy {
 	float: right;
-	width: calc(60% - 48px);
+	width: calc(60% - 70px);
 	padding: 0 24px;
 	background: white;
 	border-radius: 10px;
