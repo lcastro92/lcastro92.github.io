@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="highlight-js/highlightjs.css">
     <link rel="stylesheet" href="ScrollSpy.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .tableauPlaceholder {
+            width: 100%;
+            height: 500px; /* Ajustar la altura según sea necesario */
+            position: relative;
+        }
+        .tableauViz {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,36 +50,18 @@
 
             <h3>Data Analytics Skills</h3>
             <ul>
-                <li>
-                    <p>SQL</p>
-                </li>
-                <li>
-                    <p>MySQL</p>
-                </li>
-                <li>
-                    <p>Qlikview (including Qlik Console and NPrinting)</p>
-                </li>
-                <li>
-                    <p>R</p>
-                </li>
-                <li>
-                    <p>Python</p>
-                </li>
-                <li>
-                    <p>Learning Power BI and Power Automate!</p>
-                </li>
+                <li><p>SQL</p></li>
+                <li><p>MySQL</p></li>
+                <li><p>Qlikview (including Qlik Console and NPrinting)</p></li>
+                <li><p>R</p></li>
+                <li><p>Python</p></li>
+                <li><p>Learning Power BI and Power Automate!</p></li>
             </ul>
             <h3>Studies</h3>
             <ul>
-                <li>
-                    <p>Certificate of Advanced in Business Intelligence - On Course / Diplomatura en Business Intelligence - En curso</p>
-                </li>
-                <li>
-                    <p>Professor of Industry Disciplines / Profesor en Disciplinas Industriales</p>
-                </li>
-                <li>
-                    <p>Technical Studies in Applied Computing / Tecnicatura en Informática Aplicada</p>
-                </li>
+                <li><p>Certificate of Advanced in Business Intelligence - On Course / Diplomatura en Business Intelligence - En curso</p></li>
+                <li><p>Professor of Industry Disciplines / Profesor en Disciplinas Industriales</p></li>
+                <li><p>Technical Studies in Applied Computing / Tecnicatura en Informática Aplicada</p></li>
             </ul>
         </section>
 
@@ -90,13 +83,13 @@
 
         <section class="scrollspy" spy-title="Bookshop Dashboard">
             <h2>Bookshop Dashboard</h2>
-            <div class='tableauPlaceholder' id='viz1729511596960' style='position: relative'>
+            <div class='tableauPlaceholder' id='viz1729511596960'>
                 <noscript>
                     <a href='#'>
                         <img alt='Bookshop&#39;s Dashboard ' src='https://public.tableau.com/static/images/Bo/BookShop_17291699144560/Dashboard1/1_rss.png' style='border: none' />
                     </a>
                 </noscript>
-                <object class='tableauViz' style='display:none;'>
+                <object class='tableauViz'>
                     <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                     <param name='embed_code_version' value='3' />
                     <param name='site_root' value='' />
@@ -115,16 +108,8 @@
             <script type='text/javascript'>
                 var divElement = document.getElementById('viz1729511596960');
                 var vizElement = divElement.getElementsByTagName('object')[0];
-                if (divElement.offsetWidth > 800) {
-                    vizElement.style.width = '1143px';
-                    vizElement.style.height = '478px';
-                } else if (divElement.offsetWidth > 500) {
-                    vizElement.style.width = '1143px';
-                    vizElement.style.height = '478px';
-                } else {
-                    vizElement.style.width = '1143px';
-                    vizElement.style.height = '478px';
-                }
+                vizElement.style.width = divElement.offsetWidth + 'px';
+                vizElement.style.height = divElement.offsetHeight + 'px';
                 var scriptElement = document.createElement('script');
                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                 vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -135,7 +120,7 @@
             <h2>Contact</h2>
             <p>In my repositories you'll find some introductory code about Python and R. <a href="https://github.com/lcastro92">GitHub Profile</a></p>
             <p>Here is my LinkedIn: <a href="https://www.linkedin.com/in/lucas-ezequiel-castro-709723187">LinkedIn Profile</a></p>
-            <p>Check out my portfolio: <a href="https://www.example.com">Portfolio</a></p> <!-- Nueva URL agregada -->
+            <p>Check out my portfolio: <a href="https://www.example.com">Portfolio</a></p>
         </section>
 
     </div>
