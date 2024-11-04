@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -80,12 +83,12 @@ body {
 }
 
 section.scrollspy {
-	float: right;
-	width: calc(60% - 48px);
+	/* float: right; */
+	/* width: calc(60% - 48px); */
 	padding: 0 24px;
 	background: white;
 	border-radius: 10px;
-	margin: 24px 20%;
+	margin: 24px 5%;
 	border: 1px solid rgba(0,0,0,0.05);
 	box-shadow: 0 0 15px rgba(0,0,0,0.1);
 	text-align: left;
@@ -101,16 +104,16 @@ section.scrollspy h2 {
 	color: #454545;
 }
 
-section.scrollspy h3 {
+/* section.scrollspy h3 {
 	float: left;
-	width: 100%;
+	width: 80%;
 	text-align: left;
 	font-size: 17px;
 	padding: 6px;
 	margin: 12px 0;
 	color: #454545;
 	border-left: 3px solid #111212;
-}
+} */
 
 .hljs {
 	padding: 12px;
@@ -139,3 +142,75 @@ kbd {
 .parameter span:before {
 	content: ' : ';
 }
+/* eq */
+
+.columnas-about{
+	display: flex;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.text-center{
+	text-align: center;
+}
+
+#indicator {
+    position: fixed;
+    top: 0;
+    right: -250px; 
+    width: 250px;
+    /* height: 100%; */
+    background-color: #333;
+    color: white;
+    transition: right 0.3s ease; 
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.menu-hidden {
+    right: -250px; 
+}
+
+.menu-visible {
+    right: 0; 
+}
+
+#indicator ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#indicator ul li {
+    margin: 15px 0;
+}
+
+#indicator ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu-hidden {
+    left: -250px; 
+}
+
+.menu-visible {
+    left: 0; 
+}
+
+#menu-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+

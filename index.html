@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="highlight-js/highlightjs.css">
     <link rel="stylesheet" href="ScrollSpy.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .menu-hidden {
+            display: none; 
+        }
+
+        .menu-visible {
+            display: block; 
+        }
+
+        #indicator {
+            position: fixed;
+            top: 50px;
+            right: 10px;
+            z-index: 1000;
+        }
+
+        #menu-button {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,81 +41,60 @@
     </div>
 
     <div class="content">
-
-        <section class="scrollspy" spy-title="About me">
-            <h2>About me</h2>
-            <h3>Hi! I'm Lucas E. Castro</h3>
-            <p>I'm a Programming Teacher and Business Intelligence Analyst.</p>
-
-            <h3>Experience</h3>
-
-            <ul>
-                <li>
-                    <p>Data Analytics Consultant - Since March 2020</p>
-                </li>
-                <li>
-                    <p>Programming Professor - Since August 2015</p>
-                </li>
-            </ul>
-
-            <h3>Data Analytics Skills</h3>
-            <ul>
-                <li>
-                    <p>SQL</p>
-                </li>
-                <li>
-                    <p>MySQL</p>
-                </li>
-                <li>
-                    <p>Qlikview (including Qlik Console and NPrinting)</p>
-                </li>
-                <li>
-                    <p>R</p>
-                </li>
-                <li>
-                    <p>Python</p>
-                </li>
-                <li>
-                    <p>Power BI </p>
-                </li>
-                
-                <li>
-                    <p>Tableau</p>
-                </li>
-            </ul>
-            <h3>Studies</h3>
-            <ul>
-                <li>
-                    <p>Certificate of Advanced in Business Intelligence / Diplomatura en Business Intelligence </p>
-                </li>
-                <li>
-                    <p>Professor of Industry Disciplines / Profesor en Disciplinas Industriales</p>
-                </li>
-                <li>
-                    <p>Technical Studies in Applied Computing / Tecnicatura en Informática Aplicada</p>
-                </li>
-            </ul>
+        <section id="about-me" class="scrollspy" spy-title="About Me">
+            <div class="text-center">
+                <h2>About me</h2>
+                <h3>Hi! I'm Lucas E. Castro</h3>
+                <p>I'm a Programming Teacher and Business Intelligence Analyst.</p>
+            </div>
+            <div class="columnas-about">
+                <div class="lateralUno">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li><p>Data Analytics Consultant - Since March 2020</p></li>
+                        <li><p>Programming Professor - Since August 2015</p></li>
+                    </ul>
+                    <h3>Data Analytics Skills</h3>
+                    <ul>
+                        <li><p>SQL</p></li>
+                        <li><p>MySQL</p></li>
+                        <li><p>Qlikview (including Qlik Console and NPrinting)</p></li>
+                        <li><p>R</p></li>
+                        <li><p>Python</p></li>
+                        <li><p>Power BI</p></li>
+                        <li><p>Tableau</p></li>
+                    </ul>
+                </div>
+                <div class="lateralDos">
+                    <h3>Studies</h3>
+                    <ul>
+                        <li><p>Certificate of Advanced in Business Intelligence / Diplomatura en Business Intelligence</p></li>
+                        <li><p>Professor of Industry Disciplines / Profesor en Disciplinas Industriales</p></li>
+                        <li><p>Technical Studies in Applied Computing / Tecnicatura en Informática Aplicada</p></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="scrollspy" spy-title="Vaccination Dashboard">
+        <section id="vaccination-dashboard" class="scrollspy" spy-title="Vaccination Dashboard">
             <h2>Vaccination Dashboard</h2>
-            <h3>Covid19 Vaccination in Buenos Aires</h3>
+            <h3 class="text-center">Covid19 Vaccination in Buenos Aires</h3>
             <pre><code class="hljs html">
 <iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiOWYyZGQ2MDEtYmRjOC00YzYxLTkwMTItMWFjNzhiMGVlMDhhIiwidCI6ImQ0YmQ2ODU3LTkwMGQtNGM2MS1iYTk5LWNkMmQ5MTJlMmI4YyJ9&pageName=ReportSectionb85939c7935c3b6264b1" frameborder="0" allowFullScreen="true"></iframe>
 </code></pre>
         </section>
 
-        <section class="scrollspy" spy-title="SUBE Card Transactions">
+        <section id="sube-card" class="scrollspy" spy-title="SUBE Card Transactions">
             <h2>SUBE Card Transactions</h2>
-            <h3>SUBE Card Transactions in Argentina 2020/2021</h3>
+            <h3 class="text-center">SUBE Card Transactions in Argentina 2020/2021</h3>
             <pre><code class="hljs javascript">
 <iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiOWUzNGI4YzktYjdlZC00NzJiLWI2OGQtMjE2YjA3ZjIzMjU2IiwidCI6ImQ0YmQ2ODU3LTkwMGQtNGM2MS1iYTk5LWNkMmQ5MTJlMmI4YyJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
 </code></pre>
         </section>
 
-        <section class="scrollspy" spy-title="Bookshop Dashboard">
+        <section id="bookshop-dashboard" class="scrollspy" spy-title="Bookshop Dashboard">
             <h2>Bookshop Dashboard</h2>
-            <h3>Bookshop Dashboard using Tableau</h3>
+            <h3 class="text-center">Bookshop Dashboard using Tableau</h3>
             <div class='tableauPlaceholder' id='viz1729511596960' style='position: relative'>
                 <noscript>
                     <a href='#'>
@@ -120,46 +120,50 @@
             <script type='text/javascript'>
                 var divElement = document.getElementById('viz1729511596960');
                 var vizElement = divElement.getElementsByTagName('object')[0];
-                if (divElement.offsetWidth > 800) {
-                    vizElement.style.width = '1143px';
-                    vizElement.style.height = '478px';
-                } else if (divElement.offsetWidth > 500) {
-                    vizElement.style.width = '1143px';
-                    vizElement.style.height = '478px';
-                } else {
-                    vizElement.style.width = '1143px';
-                    vizElement.style.height = '478px';
-                }
+                vizElement.style.width = divElement.offsetWidth > 800 ? '1143px' : '100%';
+                vizElement.style.height = '478px';
                 var scriptElement = document.createElement('script');
                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                 vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
         </section>
 
-        <section class="scrollspy" spy-title="Contact">
+        <section id="contact" class="scrollspy" spy-title="Contact">
             <h2>Contact</h2>
             <p>In my repositories you'll find some introductory code about Python and R. <a href="https://github.com/lcastro92">GitHub Profile</a></p>
             <p>Here is my LinkedIn: <a href="https://www.linkedin.com/in/lucas-ezequiel-castro-709723187">LinkedIn Profile</a></p>
         </section>
-
     </div>
 
-    <div id="indicator"></div>
+    <div id="menu-button" onclick="toggleMenu()">☰</div>
+    <div id="indicator" class="menu-hidden">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#vaccination-dashboard">Vaccination Dashboard</a></li>
+            <li><a href="#sube-card">SUBE Card Transactions</a></li>
+            <li><a href="#bookshop-dashboard">Bookshop Dashboard</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
     <script>
-        var indicator = document.getElementById('indicator');
+        function toggleMenu() {
+            var menu = document.getElementById('indicator');
+            menu.classList.toggle('menu-hidden');
+            menu.classList.toggle('menu-visible'); 
+        }
 
-        var spy = new ScrollSpy({
-            contexts_class: 'scrollspy'
+        
+        var links = document.querySelectorAll('#indicator a');
+        links.forEach(function(link) {
+            link.addEventListener('click', function() {
+                var menu = document.getElementById('indicator');
+                menu.classList.remove('menu-visible');
+                menu.classList.add('menu-hidden'); 
+            });
         });
-
-        spy.Indicator({
-            element: indicator
-        });
-
-        indicator.style.top = 'calc(50vh - ' + (indicator.offsetHeight / 2) + 'px)';
+        
     </script>
-
 </body>
 
 </html>
