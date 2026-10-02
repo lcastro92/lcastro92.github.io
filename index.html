@@ -1,169 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <title>Lucas Castro</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="highlight-js/highlightjs.css">
-    <link rel="stylesheet" href="ScrollSpy.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Ezequiel Castro | BI & AI Specialist | EdTech</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3b82f6',
+                            purple: '#8b5cf6',
+                            dark: '#0f172a',
+                            card: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        
-        .menu-hidden {
-            display: none; 
-        }
-
-        .menu-visible {
-            display: block; 
-        }
-
-        #indicator {
-            position: fixed;
-            top: 50px;
-            right: 10px;
-            z-index: 1000;
-        }
-
-        #menu-button {
-            cursor: pointer;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
 
-<body>
-
-    <script src="ScrollSpy.min.js"></script>
-
-    <div class="container">
-        <h1>Lucas Castro</h1>
-        <h2>Data Analyst</h2>
-    </div>
-
-    <div class="content">
-        <section id="about-me" class="scrollspy" spy-title="About Me">
-            <div class="text-center">
-                <h2>About me</h2>
-                <h3>Hi! I'm Lucas E. Castro</h3>
-                <p>I'm a Programming Teacher and Business Intelligence Analyst.</p>
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-blue-400 transition">
+                Lucas Castro<span class="text-blue-500">.</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#perfil" class="hover:text-blue-400 transition">Perfil</a>
+                <a href="#experiencia" class="hover:text-blue-400 transition">Experiencia</a>
+                <a href="#formacion" class="hover:text-blue-400 transition">Formación</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Habilidades</a>
+                <a href="#contacto" class="hover:text-blue-400 transition">Contacto</a>
             </div>
-            <div class="columnas-about">
-                <div class="lateralUno">
-                    <h3>Experience</h3>
-                    <ul>
-                        <li><p>Data Analytics Consultant - Since March 2020</p></li>
-                        <li><p>Programming Professor - Since August 2015</p></li>
-                    </ul>
-                    <h3>Data Analytics Skills</h3>
-                    <ul>
-                        <li><p>SQL</p></li>
-                        <li><p>MySQL</p></li>
-                        <li><p>Qlikview (including Qlik Console and NPrinting)</p></li>
-                        <li><p>R</p></li>
-                        <li><p>Python</p></li>
-                        <li><p>Power BI</p></li>
-                        <li><p>Tableau</p></li>
-                    </ul>
+            <a href="mailto:lucas.castro.0307@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-lg shadow-blue-500/25">
+                Contactar
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section id="perfil" class="pt-32 pb-20 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="space-y-6 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider">
+                <i class="fa-solid fa-brain"></i> BI Analyst & AI Specialist
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Lucas Ezequiel Castro
+            </h1>
+            <p class="text-lg text-slate-400 leading-relaxed">
+                Analista de Business Intelligence, Educador Tecnológico y Especialista en IA. Con más de 10 años de experiencia combinando soluciones analíticas de datos (ETL, Power BI, MicroStrategy), docencia técnica e investigación y prototipado de proyectos de IA.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="https://linkedin.com/in/lucas-ezequiel-castro-709723187/" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-5 py-3 rounded-lg font-medium border border-slate-700 transition">
+                    <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn
+                </a>
+                <a href="https://github.com/lcastro92" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-5 py-3 rounded-lg font-medium border border-slate-700 transition">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div class="w-full md:w-80 flex-shrink-0">
+            <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700/80 shadow-2xl space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
+                    <span class="text-sm text-slate-300 font-medium">Disponible para proyectos y consultoría</span>
                 </div>
-                <div class="lateralDos">
-                    <h3>Studies</h3>
-                    <ul>
-                        <li><p>Certificate of Advanced in Business Intelligence / Diplomatura en Business Intelligence</p></li>
-                        <li><p>Professor of Industry Disciplines / Profesor en Disciplinas Industriales</p></li>
-                        <li><p>Technical Studies in Applied Computing / Tecnicatura en Informática Aplicada</p></li>
-                    </ul>
+                <hr class="border-slate-800">
+                <div class="space-y-3 text-sm text-slate-400">
+                    <p><i class="fa-solid fa-location-dot text-slate-500 w-5"></i> San Fernando, Buenos Aires</p>
+                    <p><i class="fa-solid fa-graduation-cap text-slate-500 w-5"></i> Lic. en Tecnología Educativa (UTN)</p>
+                    <p><i class="fa-solid fa-award text-slate-500 w-5"></i> Dip. en IA (Sobresaliente)</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="vaccination-dashboard" class="scrollspy" spy-title="Vaccination Dashboard">
-            <h2>Vaccination Dashboard</h2>
-            <h3 class="text-center">Covid19 Vaccination in Buenos Aires</h3>
-            <pre><code class="hljs html">
-<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiOWYyZGQ2MDEtYmRjOC00YzYxLTkwMTItMWFjNzhiMGVlMDhhIiwidCI6ImQ0YmQ2ODU3LTkwMGQtNGM2MS1iYTk5LWNkMmQ5MTJlMmI4YyJ9&pageName=ReportSectionb85939c7935c3b6264b1" frameborder="0" allowFullScreen="true"></iframe>
-</code></pre>
-        </section>
+    <!-- Experiencia Laboral -->
+    <section id="experiencia" class="py-16 bg-slate-900/50 border-t border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-briefcase text-blue-500"></i> Experiencia Laboral
+            </h2>
 
-        <section id="sube-card" class="scrollspy" spy-title="SUBE Card Transactions">
-            <h2>SUBE Card Transactions</h2>
-            <h3 class="text-center">SUBE Card Transactions in Argentina 2020/2021</h3>
-            <pre><code class="hljs javascript">
-<iframe width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiOWUzNGI4YzktYjdlZC00NzJiLWI2OGQtMjE2YjA3ZjIzMjU2IiwidCI6ImQ0YmQ2ODU3LTkwMGQtNGM2MS1iYTk5LWNkMmQ5MTJlMmI4YyJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
-</code></pre>
-        </section>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-3 md:before:left-1/2 before:-translate-x-px before:w-0.5 before:bg-slate-800">
+                
+                <!-- AGD -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-7 h-7 rounded-full bg-blue-600 text-white font-bold text-xs shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        1
+                    </div>
+                    <div class="w-[calc(100%-2.5rem)] md:w-[calc(50%-2rem)] bg-slate-800/90 p-6 rounded-xl border border-slate-700/60 shadow-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-white text-lg">Analista Funcional de BI</h3>
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">2022 - Presente</span>
+                        </div>
+                        <p class="text-sm font-semibold text-blue-400 mb-3">Aceitera General Deheza (AGD)</p>
+                        <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+                            <li>Liderazgo de equipo de desarrollo de BI y gestión de requerimientos.</li>
+                            <li>Diseño de Dossiers e informes interactivos en MicroStrategy y Power BI.</li>
+                            <li>Investigación y exploración de prototipos (PoCs) para optimización analítica.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <section id="bookshop-dashboard" class="scrollspy" spy-title="Bookshop Dashboard">
-            <h2>Bookshop Dashboard</h2>
-            <h3 class="text-center">Bookshop Dashboard using Tableau</h3>
-            <div class='tableauPlaceholder' id='viz1729511596960' style='position: relative'>
-                <noscript>
-                    <a href='#'>
-                        <img alt='Bookshop&#39;s Dashboard ' src='https://public.tableau.com/static/images/Bo/BookShop_17291699144560/Dashboard1/1_rss.png' style='border: none' />
-                    </a>
-                </noscript>
-                <object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='BookShop_17291699144560&#47;Dashboard1' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image' value='https://public.tableau.com/static/images/Bo/BookShop_17291699144560/Dashboard1/1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object>
+                <!-- CFP 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-7 h-7 rounded-full bg-purple-600 text-white font-bold text-xs shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        2
+                    </div>
+                    <div class="w-[calc(100%-2.5rem)] md:w-[calc(50%-2rem)] bg-slate-800/90 p-6 rounded-xl border border-slate-700/60 shadow-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-white text-lg">Profesor de Programación e IA</h3>
+                            <span class="text-xs bg-purple-500/10 text-purple-400 px-2 py-1 rounded">2013 - Presente</span>
+                        </div>
+                        <p class="text-sm font-semibold text-purple-400 mb-3">Centro de Formación Profesional N° 1</p>
+                        <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+                            <li>Docente del curso <strong>"IA para la Productividad"</strong> (orientado a no técnicos).</li>
+                            <li>Enseñanza de POO, Programación Estructurada y Bases de Datos con Python y MySQL.</li>
+                            <li>Modelado DER, UML y diseño de planes de estudio EdTech.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Taligent -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-7 h-7 rounded-full bg-slate-600 text-white font-bold text-xs shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        3
+                    </div>
+                    <div class="w-[calc(100%-2.5rem)] md:w-[calc(50%-2rem)] bg-slate-800/90 p-6 rounded-xl border border-slate-700/60 shadow-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-white text-lg">Consultor de Business Intelligence</h3>
+                            <span class="text-xs bg-slate-700 text-slate-300 px-2 py-1 rounded">2020 - 2022</span>
+                        </div>
+                        <p class="text-sm font-semibold text-slate-400 mb-3">Taligent</p>
+                        <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+                            <li>Análisis de requerimientos y desarrollo de soluciones BI a medida.</li>
+                            <li>Modelado de datos, tableros ejecutivos y desarrollo de procesos ETL.</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1729511596960');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                vizElement.style.width = divElement.offsetWidth > 800 ? '1143px' : '100%';
-                vizElement.style.height = '478px';
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="scrollspy" spy-title="Contact">
-            <h2>Contact</h2>
-            <p>In my repositories you'll find some introductory code about Python and R. <a href="https://github.com/lcastro92">GitHub Profile</a></p>
-            <p>Here is my LinkedIn: <a href="https://www.linkedin.com/in/lucas-ezequiel-castro-709723187">LinkedIn Profile</a></p>
-        </section>
-    </div>
+    <!-- Formación Académica -->
+    <section id="formacion" class="py-16 max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+            <i class="fa-solid fa-graduation-cap text-purple-500"></i> Formación Académica
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700">
+                <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">En curso</span>
+                <h3 class="font-bold text-white text-base mt-1">Licenciatura en Tecnología Educativa</h3>
+                <p class="text-xs text-slate-400 mt-1">UTN FRBA</p>
+            </div>
 
-    <div id="menu-button" onclick="toggleMenu()">☰</div>
-    <div id="indicator" class="menu-hidden">
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#vaccination-dashboard">Vaccination Dashboard</a></li>
-            <li><a href="#sube-card">SUBE Card Transactions</a></li>
-            <li><a href="#bookshop-dashboard">Bookshop Dashboard</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+            <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700">
+                <span class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Nota: Sobresaliente</span>
+                <h3 class="font-bold text-white text-base mt-1">Diplomatura en Inteligencia Artificial</h3>
+                <p class="text-xs text-slate-400 mt-1">UTN FRBA - SCEU</p>
+            </div>
 
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('indicator');
-            menu.classList.toggle('menu-hidden');
-            menu.classList.toggle('menu-visible'); 
-        }
+            <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700">
+                <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">2022</span>
+                <h3 class="font-bold text-white text-base mt-1">Diplomatura en Business Intelligence</h3>
+                <p class="text-xs text-slate-400 mt-1">UTN FRBA - SCEU</p>
+            </div>
 
-        
-        var links = document.querySelectorAll('#indicator a');
-        links.forEach(function(link) {
-            link.addEventListener('click', function() {
-                var menu = document.getElementById('indicator');
-                menu.classList.remove('menu-visible');
-                menu.classList.add('menu-hidden'); 
-            });
-        });
-        
-    </script>
+            <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700">
+                <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">2022</span>
+                <h3 class="font-bold text-white text-base mt-1">Diplomatura en Business Analysis</h3>
+                <p class="text-xs text-slate-400 mt-1">UTN FRBA - SCEU</p>
+            </div>
+
+            <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">2019 - 2020</span>
+                <h3 class="font-bold text-white text-base mt-1">Profesorado en Disciplinas Industriales</h3>
+                <p class="text-xs text-slate-400 mt-1">INSPT - UTN</p>
+            </div>
+
+            <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">2014 - 2018</span>
+                <h3 class="font-bold text-white text-base mt-1">Tecnicatura Sup. en Informática Aplicada</h3>
+                <p class="text-xs text-slate-400 mt-1">INSPT - UTN</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Habilidades y Stack -->
+    <section id="skills" class="py-16 bg-slate-900/50 border-t border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-code text-blue-500"></i> Competencias & Tecnologías
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- BI & Datos -->
+                <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie text-blue-400"></i> Business Intelligence & ETL
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Power BI</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">MicroStrategy</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">QlikView</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">SQL Server</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">MySQL</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Pandas</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">SSIS</span>
+                    </div>
+                </div>
+
+                <!-- Programación & IA -->
+                <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-robot text-purple-400"></i> Programación & IA
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Python</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">R</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Java</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">C / C++</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">IA Generativa</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Prompt Engineering</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">PoCs / Prototipado</span>
+                    </div>
+                </div>
+
+                <!-- Educación & Metodologías -->
+                <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-chalkboard-user text-emerald-400"></i> EdTech & Gestión
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Tecnología Educativa</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Diseño Curricular</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Liderazgo de Equipos</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Metodologías Ágiles</span>
+                        <span class="bg-slate-700 text-slate-200 text-xs px-2.5 py-1 rounded">Inglés Avanzado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <div class="max-w-6xl mx-auto px-4 space-y-4">
+            <p class="text-slate-300 font-medium">© Lucas Ezequiel Castro. Todos los derechos reservados.</p>
+            <div class="flex justify-center gap-6 text-lg text-slate-400">
+                <a href="https://linkedin.com/in/lucas-ezequiel-castro-709723187/" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/lcastro92" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:lucas.castro.0307@gmail.com" class="hover:text-blue-400 transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
-
 </html>
